@@ -180,6 +180,12 @@ title: trumpocalypse
 	
 {% for year in years %}
 	{{ year[0] }}
+	{% assign months = year | sorted %}
+	{% for month in months %}
+	  {% if month == "01" %}
+	    <h2>January</h2>
+	  {% endif %}
+	{% endfor %}	
 {% endfor %}
 {% for day in site.data.trumpocalypse %}
   <div class="day">Day {{ day.index }}</div>
