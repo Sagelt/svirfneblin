@@ -182,7 +182,7 @@ title: trumpocalypse
 {% for year in years %}
 	{% assign months = year[1] | sort %}
 	{% for month in months %}
-	  {% assign days = month[1] | sort %}
+	  {% assign days = month[1] | sort | reverse %}
 	  {% for day in days %}
 	    {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
 	    {% assign item_seconds = item_date | date: '%s' %}
