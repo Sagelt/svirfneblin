@@ -189,29 +189,25 @@ title: trumpocalypse
 	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
 	    {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
 	    <div class="day">Day {{ days_in_office }}</div>
-	    <div class="date">{{ item_date }}</div>
+	    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
+	    <table>
+	    {% for event in day[1] %}
+	    <tr>
+	      <td class="tag-box">
+		{% for tag in event[1].tags%}
+		  <span class="tag {{tag}}">{{tag}}</span>
+		{% endfor %}
+	      </td>
+	      <td class="info-box">
+		<div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
+		{% if event[1].desc %}
+		  <div class="desc">{{ event[1].desc }}</div>
+		{% endif %}
+	      </td>
+	    </tr>
+	    {% endfor %}
+	  </table>
 	  {% endfor %}
 	{% endfor %}	
-{% endfor %}
-{% for day in site.data.trumpocalypse %}
-  
-  <div class="date">{{ day.date }}</div>
-  <table>
-    {% for event in day.events %}
-    <tr>
-      <td class="tag-box">
-        {% for tag in event.tags%}
-          <span class="tag {{tag}}">{{tag}}</span>
-        {% endfor %}
-      </td>
-      <td class="info-box">
-        <div class="title"><a href="{{ event.url }}">{{ event.title }}</a></div>
-        {% if event.desc %}
-          <div class="desc">{{ event.desc }}</div>
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </table>
 {% endfor %}
 
