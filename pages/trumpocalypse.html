@@ -179,12 +179,12 @@ title: trumpocalypse
 {% assign years = site.data.trumpocalypse | sort %}
 {% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
 
-{% for year in years %}
+{% for year in years reversed %}
 {{ year }}
 	{% assign months = year[1] | sort %}
-	{% for month in months %}
+	{% for month in months reversed %}
 	  {% assign days = month[1] | sort %}
-	  {% for day in days reversed%}
+	  {% for day in days reversed %}
 	    {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
 	    {% assign item_seconds = item_date | date: '%s' %}
 	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
