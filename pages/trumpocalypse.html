@@ -179,9 +179,11 @@ title: trumpocalypse
 {% assign years = site.data.trumpocalypse | sorted %}
 	
 {% for year in years %}
+	{{ year }}
 	{{ year[0] }}
 	{% assign months = year | sorted %}
 	{% for month in months %}
+	  {{ month }}
 	  {% if month == "01" %}
 	    <h2>January</h2>
 	  {% endif %}
