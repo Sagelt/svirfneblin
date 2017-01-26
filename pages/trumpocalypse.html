@@ -191,7 +191,7 @@ title: trumpocalypse
 	    <div class="day">Day {{ days_in_office }}</div>
 	    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
 	    <table>
-	    {% assign events = day[1] | reverse %}
+	    {% assign events = day[1] %}
 	    {% for event in day[1] %}
 	    <tr>
 	      <td class="tag-box">
