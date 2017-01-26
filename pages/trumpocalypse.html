@@ -179,7 +179,7 @@ title: trumpocalypse
 {% assign years = site.data.trumpocalypse | sorted %}
 	
 {% for year in years %}
-	{{ year }}
+	{{ year[0] }}
 {% endfor %}
 {% for day in site.data.trumpocalypse %}
   <div class="day">Day {{ day.index }}</div>
