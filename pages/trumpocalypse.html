@@ -180,7 +180,6 @@ title: trumpocalypse
 {% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
 
 {% for year in years reversed %}
-{{ year }}
 	{% assign months = year[1] | sort %}
 	{% for month in months reversed %}
 	  {% assign days = month[1] | sort %}
