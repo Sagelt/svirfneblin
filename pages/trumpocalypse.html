@@ -1,19 +1,5 @@
 ---
 title: trumpocalypse
-days:
-- date: Wednesday 25 January 2017
-  index: 6
-  events:
-   - title: Trump announces new White House ethics team
-     desc: "Some ethics watchdogs were skeptical."
-     url: https://www.washingtonpost.com/politics/trump-announces-new-white-house-ethics-team/2017/01/25/85e66dce-e354-11e6-ba11-63c4b4fb5a63_story.html
-     tags:
-      - News
-      - HaHa
-   - title: Germany will abolish law against insulting foreign heads of state
-     url: http://www.cbsnews.com/news/germany-will-abolish-law-against-insulting-foreign-heads-of-state/
-     tags: 
-      - News
 ---
 <head>
 	<meta charset="utf-8">
@@ -190,7 +176,12 @@ days:
 <div class="main-title">The Trump Administration</div>
 <div class="main-subtitle">Day by Day</div>
 
-{% for day in page.days %}
+{% assign years = site.data.trumpocalypse | sorted %}
+	
+{% for year in years %}
+	{{ year }}
+{% endfor %}
+{% for day in site.data.trumpocalypse %}
   <div class="day">Day {{ day.index }}</div>
   <div class="date">{{ day.date }}</div>
   <table>
