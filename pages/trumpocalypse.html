@@ -177,19 +177,24 @@ title: trumpocalypse
 <div class="main-subtitle">Day by Day</div>
 
 {% assign years = site.data.trumpocalypse | sorted %}
+{% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
 	
 {% for year in years %}
-	{{ year }}
-	<h1>Key: {{ year[0] }}</h1>
-	<p> Value: {{ year[1] }}</p>
 	{% assign months = year[1] | sorted %}
 	{% for month in months %}
-	  <h2>Key: {{ month[0] }}</h2>
-	<p>Value: {{ month[1] }}</p>
+	  {% assign days = month[1] %}
+	  {% for day in days %}
+	    {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
+	    {% assign item_seconds = item_date | date: '%s' %}
+	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
+	    {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
+	    <div class="day">Day {{ days_in_office }}</div>
+	    <div class="date">{{ item_date }}</div>
+	  {% endfor %}
 	{% endfor %}	
 {% endfor %}
 {% for day in site.data.trumpocalypse %}
-  <div class="day">Day {{ day.index }}</div>
+  
   <div class="date">{{ day.date }}</div>
   <table>
     {% for event in day.events %}
