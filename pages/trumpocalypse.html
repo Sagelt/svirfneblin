@@ -176,13 +176,13 @@ title: trumpocalypse
 <div class="main-title">The Trump Administration</div>
 <div class="main-subtitle">Day by Day</div>
 
-{% assign years = site.data.trumpocalypse | sort %}
+{% assign years = site.data.trumpocalypse | sort | reverse %}
 {% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
 	
 {% for year in years %}
-	{% assign months = year[1] | sort %}
+	{% assign months = year[1] | sort | reverse %}
 	{% for month in months %}
-	  {% assign days = month[1] | sort %}
+	  {% assign days = month[1] | sort | reverse %}
 	  {% for day in days %}
 	    {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
 	    {% assign item_seconds = item_date | date: '%s' %}
