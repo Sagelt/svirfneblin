@@ -84,6 +84,8 @@ title: trumpocalypse
       font-style: italic;
       margin: 0 2px 2px 8px;
     }
+		
+    .top-buffer { margin-top:20px; }
 
     .tag {
       font-family: 'Arial Narrow', Arial, sans-serif;
@@ -207,7 +209,7 @@ title: trumpocalypse
 	    </div>
 	   {% assign events = day[1] | sort %}
 	    {% for event in day[1] %}
-	    <div class="row">
+	    <div class="row top-buffer">
 		    <div class="col-md-3 col-md-offset-1">
 			    <div class="tag-box">
 			    {% for tag in event[1].tags%}
