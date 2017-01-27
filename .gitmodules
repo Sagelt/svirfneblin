@@ -7,3 +7,6 @@
 [submodule "_data/trumpocalypse"]
 	path = _data/trumpocalypse
 	url = https://github.com/Sagelt/trumpocalypse
+[submodule "pages/trumpocalypse"]
+	path = pages/trumpocalypse
+	url = https://github.com/Sagelt/trumpocalypse-ui.git
