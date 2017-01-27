@@ -2,24 +2,24 @@
 title: trumpocalypse
 ---
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Trumpocalypse</title></head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	
-	{% if site.google_analytics %}
-	    <script>
-	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	      ga('create', '{{ site.google_analytics }}', 'auto');
-	      ga('send', 'pageview');
-	    </script>
-	  {% endif %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trumpocalypse</title></head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <style media="screen" type="text/css">
+  {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+  {% endif %}
+
+    <style media="screen" type="text/css">
     .container {
       font-family: 'Georgia', serif;
     }
@@ -84,8 +84,10 @@ title: trumpocalypse
       font-style: italic;
       margin: 0 2px 2px 8px;
     }
-		
-    .top-buffer { margin-top:20px; }
+
+    .top-buffer {
+      margin-top:20px;
+    }
 
     .tag {
       font-family: 'Arial Narrow', Arial, sans-serif;
@@ -134,18 +136,18 @@ title: trumpocalypse
     .Hmmm {}
 
     .ILoveWomen {
-      border-color: Pink;
+    border-color: Pink;
       background-color: White;
       color: DeepPink;
     }
 
     .Lawsuit {}
-		
-	.Mexico {
-    border-color: #f00;
-    background: repeating-linear-gradient(90deg, #cfc, #cfc 30px, #fff 30px, #fff 60px, #fcc 60px, #fcc 90px);
-    color: Black;
-}
+
+    .Mexico {
+      border-color: #f00;
+      background: repeating-linear-gradient(90deg, #cfc, #cfc 30px, #fff 30px, #fff 60px, #fcc 60px, #fcc 90px);
+      color: Black;
+    }
 
     .Misc {
       border-color: #f0f0f0;
@@ -187,51 +189,51 @@ title: trumpocalypse
   </style>
 </head>
 <body>
-<div class="container">
-<div class="main-title">The Trump Administration</div>
-<div class="main-subtitle">Day by Day</div>
+  <div class="container">
+  <div class="main-title">The Trump Administration</div>
+  <div class="main-subtitle">Day by Day</div>
 
-{% assign years = site.data.trumpocalypse | sort %}
-{% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
+  {% assign years = site.data.trumpocalypse | sort %}
+  {% assign dayzero_seconds = "2017-01-19" | date: '%s' %} 
 
-{% for year in years reversed %}
-	{% assign months = year[1] | sort %}
-	{% for month in months reversed %}
-	  {% assign days = month[1] | sort %}
-	  {% for day in days reversed %}
-	    {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
-	    {% assign item_seconds = item_date | date: '%s' %}
-	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
-	    {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
-	    <div class="row">
-		    <div class="col-md-4 col-md-offset-4">
-			    <div class="day">Day {{ days_in_office }}</div>
-		    </div>
-	    </div>
-	    <div class="row">
-		    <div class="col-md-4 col-md-offset-4">
-			    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
-		    </div>
-	    </div>
-	   {% assign events = day[1] | sort %}
-	    {% for event in day[1] %}
-	    <div class="row top-buffer">
-		    <div class="col-md-3 col-md-offset-1">
-			    <div class="tag-box">
-			    {% for tag in event[1].tags%}
-				  <span class="tag {{tag}}">{{tag}}</span>
-				{% endfor %}
-			    </div>
-		    </div>
-		    <div class="col-md-6">
-			    <div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
-		{% if event[1].desc %}
-		  <div class="desc">{{ event[1].desc }}</div>
-		{% endif %}
-		    </div>
-	    </div>
-	{% endfor %}
-	  {% endfor %}
-	{% endfor %}	
-{% endfor %}
-
+  {% for year in years reversed %}
+    {% assign months = year[1] | sort %}
+    {% for month in months reversed %}
+      {% assign days = month[1] | sort %}
+      {% for day in days reversed %}
+        {% assign item_date = year[0] | append: "-" | append: month[0] | append: "-" | append: day[0] %}
+        {% assign item_seconds = item_date | date: '%s' %}
+        {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
+        {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="day">Day {{ days_in_office }}</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
+          </div>
+        </div>
+        {% assign events = day[1] | sort %}
+        {% for event in day[1] %}
+          <div class="row top-buffer">
+            <div class="col-md-3 col-md-offset-1">
+              <div class="tag-box">
+                {% for tag in event[1].tags%}
+                  <span class="tag {{tag}}">{{tag}}</span>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
+              {% if event[1].desc %}
+                <div class="desc">{{ event[1].desc }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</body>
