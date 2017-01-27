@@ -21,10 +21,7 @@ title: trumpocalypse
 
         <style media="screen" type="text/css">
     .container {
-      width: 800px;
-      max-width: none !important;
       font-family: 'Georgia', serif;
-      padding-bottom: 50px;
     }
 
     .main-title {
@@ -65,8 +62,6 @@ title: trumpocalypse
 
     .tag-box {
       vertical-align: top;
-      margin: 2px;
-      width: 190px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -89,6 +84,8 @@ title: trumpocalypse
       font-style: italic;
       margin: 0 2px 2px 8px;
     }
+		
+    .top-buffer { margin-top:20px; }
 
     .tag {
       font-family: 'Arial Narrow', Arial, sans-serif;
@@ -200,26 +197,34 @@ title: trumpocalypse
 	    {% assign item_seconds = item_date | date: '%s' %}
 	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
 	    {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
-	    <div class="day">Day {{ days_in_office }}</div>
-	    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
-	    <table>
-	    {% assign events = day[1] | sort %}
+	    <div class="row">
+		    <div class="col-md-4 col-md-offset-4">
+			    <div class="day">Day {{ days_in_office }}</div>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col-md-4 col-md-offset-4">
+			    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
+		    </div>
+	    </div>
+	   {% assign events = day[1] | sort %}
 	    {% for event in day[1] %}
-	    <tr>
-	      <td class="tag-box">
-		{% for tag in event[1].tags%}
-		  <span class="tag {{tag}}">{{tag}}</span>
-		{% endfor %}
-	      </td>
-	      <td class="info-box">
-		<div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
+	    <div class="row top-buffer">
+		    <div class="col-md-3 col-md-offset-1">
+			    <div class="tag-box">
+			    {% for tag in event[1].tags%}
+				  <span class="tag {{tag}}">{{tag}}</span>
+				{% endfor %}
+			    </div>
+		    </div>
+		    <div class="col-md-6">
+			    <div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
 		{% if event[1].desc %}
 		  <div class="desc">{{ event[1].desc }}</div>
 		{% endif %}
-	      </td>
-	    </tr>
-	    {% endfor %}
-	  </table>
+		    </div>
+	    </div>
+	{% endfor %}
 	  {% endfor %}
 	{% endfor %}	
 {% endfor %}
