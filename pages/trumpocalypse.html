@@ -200,26 +200,32 @@ title: trumpocalypse
 	    {% assign item_seconds = item_date | date: '%s' %}
 	    {% assign seconds_diff = item_seconds | minus: dayzero_seconds %}
 	    {% assign days_in_office = seconds_diff | divided_by: 3600 | divided_by: 24 %}
-	    <div class="day">Day {{ days_in_office }}</div>
-	    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
-	    <table>
-	    {% assign events = day[1] | sort %}
+	    <div class="row">
+		    <div class="col-md-4 col-md-offset-4">
+			    <div class="day">Day {{ days_in_office }}</div>
+		    </div>
+	    </div>
+	    <div class="row">
+		    <div class="col-md-4 col-md-offset-4">
+			    <div class="date">{{ item_date | date: "%A %e %B %Y" }}</div>
+		    </div>
+	    </div>
+	   {% assign events = day[1] | sort %}
 	    {% for event in day[1] %}
-	    <tr>
-	      <td class="tag-box">
-		{% for tag in event[1].tags%}
-		  <span class="tag {{tag}}">{{tag}}</span>
-		{% endfor %}
-	      </td>
-	      <td class="info-box">
-		<div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
+	    <div class="row">
+		    <div class="col-md-2 col-md-offset-2">
+			    {% for tag in event[1].tags%}
+				  <span class="tag {{tag}}">{{tag}}</span>
+				{% endfor %}
+		    </div>
+		    <div class="col-md-6">
+			    <div class="title"><a href="{{ event[1].url }}">{{ event[1].title }}</a></div>
 		{% if event[1].desc %}
 		  <div class="desc">{{ event[1].desc }}</div>
 		{% endif %}
-	      </td>
-	    </tr>
-	    {% endfor %}
-	  </table>
+		    </div>
+	    </div>
+	{% endfor %}
 	  {% endfor %}
 	{% endfor %}	
 {% endfor %}
