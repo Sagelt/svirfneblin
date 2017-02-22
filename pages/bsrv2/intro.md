@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: "Introduction"
+date: 2017-02-22
 ---
 
 # Here We Are
