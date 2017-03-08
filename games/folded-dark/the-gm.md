@@ -8,7 +8,7 @@ game:
 
 # Being Everything Else
 
-As the GM you are everything else. You're the family, friends, and acquaintances of the player characters. You're the cold wind and the sunset and the four walls around them. You're everytthing else.
+As the GM you are everything else. You're the family, friends, and acquaintances of the player characters. You're the cold wind and the sunset and the four walls around them. You're everything else.
 
 Doing that is a big job, but a rewarding one. Don't put too much pressure on yourself to be creative in every aspect of every moment. From your position as everything else, the world may be simple—a shadowy paramilitary organization lost their child-weapon who could cross in to a parallel world, say—but the players and their characters see only bits and pieces, dimly. With their partial information even something relatively straightforward can feel like a complex mystery to untangle. Your ideas may seem straightforward because they are yours. Someone else playing with you might find your straightforward idea completely unexpected.
 
@@ -27,6 +27,7 @@ The mark before an entry indicates what kind of entry it is:
 - Entries starting with a triangle facing forward (‣) are **questions to be resolved.**
 - Entries that start with a dot (-) are **observations or ideas**
 - Entries beginning with a small circle (○) are **things that happened.**
+
 
 Keep each entry as brief as possible, just enough to remind you what happened. Add an entry for anything that strikes you, even if it might not be important later on.
 
@@ -68,6 +69,7 @@ To find the agents of the rot, ask yourself:
 - Who could be swayed by the rot's appeal?
 - Who despises those the rot would consume?
 
+
 No need to answer all three, just keep asking whichever sounds interesting until you've found as many agents as you need.
 
 ### Undefined Agents
@@ -81,6 +83,7 @@ During play you can add an agent in an open slot:
 - When the players do something that no other agent seems suitable to countering
 - When some new aspect of the rot becomes manifest and an idea strikes you
 - When the rot needs to do something and no existing agent fits
+
 
 Leaving your agents undefined is a good idea as long as your players are okay with it, as it lets you portray a more powerful rot without having to be as samrt and far-thinking as that rot.
 
