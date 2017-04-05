@@ -9,7 +9,7 @@ The villains won. No one is quite sure how, but everyone knows the outcome: citi
 
 Whatever your powers were, this is what you are now. Diminished, but not dead.
 
-Now the world is not what it was. Look around you: evidently, certainly, not what it was. But also close your eyes, open your brain: something is wrong. At the limits of perception, something howling, everpresent, full of hate and terror. From this, the world’s psychic maelstrom, we none of us have
+Now the world is not what it was. Look around you: evidently, certainly, not what it was. But also close your eyes, open your brain: something is wrong. At the limits of perception, something howling, everpresent, full of hate and terror. From this, the world’s psychic maelstrom, we none of us have shelter.
 
 # About
 Apocalypse 616 is a lightweight reskinning of D. Vincent Baker and Megeuy Baker's [Apocalypse World](http://apocalypse-world.com/) based on Old Man Logan from Wolverine #66–72. It's heavily influenced by [Jay & Miles X-Plain The X-Men](http://www.xplainthexmen.com/), especially [their episode on Old Man Logan](http://www.xplainthexmen.com/2017/03/149-panning-for-callbacks/).
