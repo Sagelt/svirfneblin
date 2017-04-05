@@ -2,6 +2,8 @@
 layout: download
 title: Apocalypse 616
 description: An Apocalypse World mod where the supervillains won.
+image: /images/dirt.jpg
+image-sm: /images/dirt.jpg
 ---
 The villains won. No one is quite sure how, but everyone knows the outcome: cities burning, society in chaos then collapse, families set to panicked flight, the weird nights when the smoldering sky made midnight into a blood-colored half-day.
 
