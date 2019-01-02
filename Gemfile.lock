@@ -5,8 +5,8 @@ GEM
       execjs
     colorator (0.1)
     execjs (2.6.0)
-    ffi (1.9.10)
-    jekyll (3.1.6)
+    ffi (1.9.24)
+    jekyll (3.6.3)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
