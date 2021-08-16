@@ -112,31 +112,6 @@ ol {
 
 .footnotes {
   font-size: 0.75em;
-  line-height: 1.6;
-
-  @media (min-width: $mq-xs) {
-    font-size: 102.5%;
-  }
-
-  @media (min-width: $mq-sm) {
-    font-size: 105%;
-  }
-
-  @media (min-width: $mq-md) {
-    font-size: 107.5%;
-  }
-
-  @media (min-width: $mq-lg) {
-    font-size: 110%;
-  }
-
-  @media (min-width: $mq-xl) {
-    font-size: 115%;
-  }
-
-  @media (min-width: $mq-xxl) {
-    font-size: 125%;
-  }
 }
 
 .footnotes ol {
