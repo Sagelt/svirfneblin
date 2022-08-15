@@ -5,6 +5,4 @@ id: home
 permalink: /
 ---
 
-# Welcome! 
-
-A guide to our TOR2E campaign. Start with the [[Chronicle of Years]]
+A guide to our [The One Ring Second Edition](https://freeleaguepublishing.com/en/games/the-one-ring/) campaign. Start with the [[Chronicle of Years]] or [[Episode Summaries]].
