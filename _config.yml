@@ -32,4 +32,8 @@ sass:
   style: compressed
 
 # Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer, jekyll-wikilinks]
+
+# Plugins
+plugins:
+  - jekyll-wikilinks
