@@ -1,4 +1,4 @@
-A campaign wiki/knowledge map developed based on the Maxime Vaillancoirt's [digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)**
+A campaign wiki/knowledge map developed based on the Maxime Vaillancoirt's [digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)
 
 ## License
 
