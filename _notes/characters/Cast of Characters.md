@@ -1,3 +1,6 @@
+---
+---
+
 # Player Characters
 * [[Paladin Took II]]
 * [[Esmerelda Took]]
