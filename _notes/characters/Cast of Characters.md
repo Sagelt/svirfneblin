@@ -1,6 +1,3 @@
----
----
-
 # Player Characters
 * [[Paladin Took II]]
 * [[Esmerelda Took]]
@@ -9,3 +6,4 @@
 
 # Loremaster Characters
 * [[Bilbo Baggins]] a notable Hobbit of The Shire.
+* [[Gandalf The Grey]]

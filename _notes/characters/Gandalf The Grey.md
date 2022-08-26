@@ -1,0 +1,1 @@
+A wizard and troublemaker within the Shire. Last seen in spring 2960 searching for his lost fireworks.
