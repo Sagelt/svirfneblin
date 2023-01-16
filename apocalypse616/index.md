@@ -17,5 +17,5 @@ Apocalypse 616 is a lightweight reskinning of D. Vincent Baker and Megeuy Baker'
 You'll need a copy of Apocalypse World to play ([you should buy it](http://apocalypse-world.com/)) and read Old Man Logan for inspiration ([you should buy that too](http://amzn.to/2n8Hzxm)).
 
 # Download
-- [Basic playbooks and reference sheets](https://drive.google.com/open?id=0B8_Fz4m5hcoiLTVfbzVSUFlMNVk)
-- [Extended playbooks](https://drive.google.com/open?id=0B8_Fz4m5hcoiLTdhNUk5MHZQbWs)
+- [Basic playbooks and reference sheets](https://drive.google.com/file/d/0B8_Fz4m5hcoiLTVfbzVSUFlMNVk/view?usp=share_link&resourcekey=0-8CoZKYCItAtmyD1FZtkjbg)
+- [Extended playbooks](https://drive.google.com/file/d/0B8_Fz4m5hcoiLTdhNUk5MHZQbWs/view?usp=share_link&resourcekey=0-MmwsyIGcNg3NoqdGEKJBIQ)
