@@ -89,6 +89,8 @@ Other DRM-encumbered books may be legal to remove DRM from after purchase, depen
 
 With these settings when you open a book you’ll see just the book, nothing else, but still be able to scrawl notes by writing anywhere.
 
+![The reading experience on the Supernote Nomad with custom settings](/images/supernote-reading.jpg)
+
 If you’d like to save highlights for later, you can draw brackets (like `[` and  `]`) at the beginning and end of the text you want to highlight. You can then tap on the highlight if you want to take a longer note associated with that highlight.
 
 The quick access bar (swipe down on the bar on the right side of the screen) is handy for moving between books or jumping to your most-used apps.
