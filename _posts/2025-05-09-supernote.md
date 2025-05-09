@@ -103,7 +103,7 @@ I’ve also toyed with keeping a note called “Home” with links to all my cur
 
 I’ve found the Nomad excellent for doing crosswords. You can get cool crosswords in PDF format from [AVCX](https://avxwords.com/).
 
-Manga also reads fairly well on the Nomad. Keep an eye on Humble Bundle for when they feature mange. Otherwise I don’t know of a great way to get manga in a format that can be copied to the Nomad.
+Manga also reads fairly well on the Nomad. Keep an eye on Humble Bundle for when they feature manga. Otherwise I don’t know of a great way to get manga in a format that can be copied to the Nomad.
 
 Any line art, like [the designs of Micah Ulrich](https://shop.micahulrich.com/), work great as screensavers.
 
