@@ -47,7 +47,8 @@ Calibre is a bit of a wondrous beast of a utility. I’m pretty sure it’s Turi
 Based on [this reddit post](https://www.reddit.com/r/Supernote/comments/1990lg3/after_some_trial_and_error_ive_landed_on_my_ideal/) I’ve got a standard ebook style I convert all my books to. I’ve yet to find a book that hasn’t worked well with it.
 
 ### Preferences > Conversion > Common Options
-| Setting | Value |
+
+| **Setting** | **Value** |
 |:--|:--|
 | Look & Feel: Fonts: Base Font Size | 15pt |
 | Look & Feel: Fonts: Font Size Key | 12, 12, 14, 15, 18, 20, 22, 24 |
@@ -68,7 +69,7 @@ Calibre will happily sync books wherever you want them. For my size of library I
 
 Open the Nomad device settings by connecting the Nomad and then selecting Device > Configure Device from menu bar at the top of the main screen.
 
-| Setting | Value |
+| **Setting** | **Value** |
 |:--|:--|
 | Formats | epub, pdf |
 | Save Template | `{series:||/}{series}{series_index:0>2s| - | - }{title} - {authors}` |
