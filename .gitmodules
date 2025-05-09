@@ -1,9 +1,3 @@
-[submodule "_posts"]
-	path = _posts
-	url = https://github.com/Sagelt/posts.git
-[submodule "images"]
-	path = images
-	url = https://github.com/Sagelt/images.git
 [submodule "_data/trumpocalypse"]
 	path = _data/trumpocalypse
 	url = https://github.com/Sagelt/trumpocalypse
